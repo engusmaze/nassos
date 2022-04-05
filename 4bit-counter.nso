@@ -1,0 +1,49 @@
+# 4-bit number "buffer"
+define a0
+define a1
+define a2
+define a3
+
+# Some useful variables
+define bit
+define bittmp
+define skip
+
+label again     # Label to use with goto
+
+# Hard to explain magic
+set bit true
+
+copy bit to bittmp
+and a0 bittmp bit
+xor a0 bittmp a0
+
+copy bit to bittmp
+and a1 bittmp bit
+xor a1 bittmp a1
+
+copy bit to bittmp
+and a2 bittmp bit
+xor a2 bittmp a2
+
+copy bit to bittmp
+and a3 bittmp bit
+xor a3 bittmp a3
+
+# Just print our number bit by bit
+print a0
+print a1
+print a2
+print a3
+newline
+
+# Check if current number is the max 4-bit number
+set skip true
+and skip a0 skip
+and skip a1 skip
+and skip a2 skip
+and skip a3 skip
+not skip skip
+
+# If it is not the max number then go to beggining
+goto again if skip

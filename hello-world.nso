@@ -1,0 +1,18 @@
+define 0        # Define variable 0 with default value false
+define 1        # Define variable 1 with default value false
+set 1 true      # Set value of variable 1 to true
+
+ascii 1 0 0 1 0 0 0     # H
+ascii 1 1 0 0 1 0 1     # e
+ascii 1 1 0 1 1 0 0     # l
+ascii 1 1 0 1 1 0 0     # l
+ascii 1 1 0 1 1 1 1     # o
+ascii 0 1 0 0 0 0 0     #  
+ascii 1 1 1 0 1 1 1     # w
+ascii 1 1 0 1 1 1 1     # o
+ascii 1 1 1 0 0 1 0     # r
+ascii 1 1 0 1 1 0 0     # l
+ascii 1 1 0 0 1 0 0     # d
+ascii 0 1 0 0 0 0 1     # !
+
+newline                 # Print \n
