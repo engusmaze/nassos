@@ -1,4 +1,4 @@
-# Simplang
+# Nassos
 
 It is an experimental programming language not intended for general use in programming.
 
