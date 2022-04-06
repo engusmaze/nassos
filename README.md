@@ -6,7 +6,7 @@ It is an experimental programming language not intended for general use in progr
 
 ### Hello world
 
-###### hello-world.slg
+###### hello-world.nso
 
 ```py
 define 0        # Define variable 0 with default value false
@@ -31,7 +31,7 @@ newline                 # Print \n
 
 ### Counting to 15 in binary
 
-###### 4bit-counter.slg
+###### 4bit-counter.nso
 
 ```py
 # 4-bit number "buffer"
